@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="Haussteuerung" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\iniparser-2.16\;CMake Files\lib\iniparser-2.16\src\;CMake Files\src\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="includes">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/libincludes.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 includes" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="includes/fast">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/libincludes.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 includes/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="iniparser">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/libiniparser.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 iniparser" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="iniparser/fast">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/libiniparser.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 iniparser/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="haussteuerung">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/src/haussteuerung" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build/src" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 haussteuerung" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="haussteuerung/fast">
+         <Option output="/home/florian/Entwicklung/haussteuerung/build/src/haussteuerung" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/florian/Entwicklung/haussteuerung/build/src" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/florian/Entwicklung/haussteuerung" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/build/lib/iniparser-2.16/src" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/include" />
+            <Add directory="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 haussteuerung/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/florian/Entwicklung/haussteuerung/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/dictionary.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/iniparser.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/strlib.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/abluft.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/devices.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/ds1631_ts.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/e6tcpclient.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/e6udpserver.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/guitcpserver.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/haussteuerung.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/jalousie.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/log.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/max7311_ts.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/pcf8574_ts.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/sharedMem.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/socket.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/temp.cpp">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/config/haussteuerung.conf">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/config/hslight.conf">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/abluft.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/debug.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/devices.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/ds1631.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/e6tcpclient.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/e6udpserver.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/guitcpserver.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/haussteuerung.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/hs_config.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/jalousie.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/log.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/max7311.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/pcf8574.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/sharedMem.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/socket.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/temp.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/include/threadsafe.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/dictionary.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/iniparser.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/strlib.h">
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/lib/iniparser-2.16/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\lib\iniparser-2.16\src\" />
+      </Unit>
+      <Unit filename="/home/florian/Entwicklung/haussteuerung/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
