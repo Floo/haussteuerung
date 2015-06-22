@@ -508,7 +508,9 @@ void Terrasse::startVentilTimer(int index)
 {
     dictionary *conf;
     int dauer = 0;
+    printLog("startVentilTimer: Semaphore angefordert");
     semop(conf_sem_ID, &LOCK, 1);
+    printLog("startVentilTimer: ventil_x_duration laden");
     conf = iniparser_load(confpath);
     if(index == VENTIL_1)
         dauer = iniparser_getint(conf, "irrigation:ventil_1_duration", 0);
@@ -518,11 +520,14 @@ void Terrasse::startVentilTimer(int index)
     semop(conf_sem_ID, &UNLOCK, 1);
     if(dauer > 0)
         startVentilTimer(index, dauer);
+    else
+        printLog("startVentiltimer: Dauer konnte nicht gelesen werden");
 }
 
 void Terrasse::startVentilTimer(int index, int dauer)
 {
     SingleLock slock(this, true);
+    printLog("startVentilTimer: Timer initialisieren");
     if(dauer < 1)
         return;
     if((index == VENTIL_1) && (stateVentil_1 != AUS))

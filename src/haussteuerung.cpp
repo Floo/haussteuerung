@@ -566,6 +566,7 @@ int main(int argc, char *argv[])
                 }
                 else if(strstr(tmp, "TIMER") != NULL)
                 {
+                    printLog("Springe in startVentilTimer()");
                     terrasse->startVentilTimer(index);
                 }
                 break;
