@@ -566,7 +566,6 @@ int main(int argc, char *argv[])
                 }
                 else if(strstr(tmp, "TIMER") != NULL)
                 {
-                    printLog("Springe in startVentilTimer()");
                     terrasse->startVentilTimer(index);
                 }
                 break;
@@ -1091,18 +1090,30 @@ void timeControl(struct tm *daytime)
     {
         if(compareTimeString(iniparser_getstring(conf, "irrigation:ventil_1_start", NULL), &SASU, daytime))
         {
-            message.mtyp = CMD_WATER;
-            strcpy(message.mtext, "value=VENTIL_1_TIMER");
-            msgQueue->writeToQueue(&message);
+            int dauer = 0;
+            dauer = iniparser_getint(conf, "irrigation:ventil_1_duration", 0);
+            if (dauer > 0)
+            {
+                message.mtyp = CMD_WATER;
+                sprintf(message.mtext, "value=VENTIL_1_TIMER:%u", dauer);
+                //strcpy(message.mtext, "value=VENTIL_1_TIMER");
+                msgQueue->writeToQueue(&message);
+            }
         }
     }
     if(iniparser_getboolean(conf, "irrigation:ventil_2_auto", false))
     {
         if(compareTimeString(iniparser_getstring(conf, "irrigation:ventil_2_start", NULL), &SASU, daytime))
         {
-            message.mtyp = CMD_WATER;
-            strcpy(message.mtext, "value=VENTIL_2_TIMER");
-            msgQueue->writeToQueue(&message);
+            int dauer = 0;
+            dauer = iniparser_getint(conf, "irrigation:ventil_2_duration", 0);
+            if (dauer > 0)
+            {
+                message.mtyp = CMD_WATER;
+                sprintf(message.mtext, "value=VENTIL_2_TIMER:%u", dauer);
+                //strcpy(message.mtext, "value=VENTIL_2_TIMER");
+                msgQueue->writeToQueue(&message);
+            }
         }
     }
     iniparser_freedict(conf);

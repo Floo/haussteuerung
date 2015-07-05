@@ -504,6 +504,9 @@ void Terrasse::getStateSteckdose(char* str)
     }
 }
 
+//Funktion wird nicht mehr verwendet, da iniparser_getint() hier manchmal Ansturz verursacht hat,
+//bzw. 0 zurückgegeben hat
+//möglicherweise Zugriff auf conf-Datei verweigert? Problem mit Semaphoren? (Rückgabe von iniparser_load() prüfen?
 void Terrasse::startVentilTimer(int index)
 {
     dictionary *conf;
@@ -511,7 +514,7 @@ void Terrasse::startVentilTimer(int index)
     printLog("startVentilTimer: Semaphore angefordert");
     semop(conf_sem_ID, &LOCK, 1);
     printLog("startVentilTimer: ventil_x_duration laden");
-    conf = iniparser_load(confpath);
+    conf = iniparser_load(confpath);  //****Rückgabe auf Gültigkeit prüfen!!!!
     if(index == VENTIL_1)
         dauer = iniparser_getint(conf, "irrigation:ventil_1_duration", 0);
     if(index == VENTIL_2)
@@ -527,7 +530,6 @@ void Terrasse::startVentilTimer(int index)
 void Terrasse::startVentilTimer(int index, int dauer)
 {
     SingleLock slock(this, true);
-    printLog("startVentilTimer: Timer initialisieren");
     if(dauer < 1)
         return;
     if((index == VENTIL_1) && (stateVentil_1 != AUS))
